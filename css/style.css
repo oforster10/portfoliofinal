@@ -60,7 +60,7 @@ header h1{
 #headshot{
     max-width: 80%;
 }
-
+/* 
 .flip-card{
     background-color: transparent;
     align-items: center;
@@ -101,7 +101,7 @@ header h1{
     position: absolute;
     background-color: #3792cb;
     color: white;
-}
+} */
 
 footer{
     display: flex;
