@@ -60,48 +60,6 @@ header h1{
 #headshot{
     max-width: 80%;
 }
-/* 
-.flip-card{
-    background-color: transparent;
-    align-items: center;
-    height: 100px;
-    width: 85vw;
-    margin: auto;
-    padding: auto;
-    justify-content: center;
-    font-size: 10px;
-}
-
-.inner{
-    position: relative;
-    text-align: center;
-    transition: transform 0.5s;
-    text-align: center;
-}
-
-.flip-card:hover .inner{
-    transform: rotateY(180deg);
-}
-
-.front, .back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
-
-.front{
-    background-color: transparent;
-    transform: rotateY(180deg);
-    color: white;
-}
-
-.back{
-    position: absolute;
-    background-color: #3792cb;
-    color: white;
-} */
 
 footer{
     display: flex;
@@ -190,6 +148,54 @@ footer p{
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color:white;}
 
+
+#summary_intro{
+    padding-top: 40px;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.flipcard{
+    background: transparent;
+    justify-content: center;
+    width: 85vw;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.inner{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.back{
+    background-color: black;
+    transform: rotateY(180deg);
+    color: white;
+    
+}
+
+.back h{
+    transform: translate(-50%, 100%);
+    position: fixed;
+    font-size: 2em;
+}
+
+.flipcard:hover .inner, .flipcard:focus-within .inner, .flipcard:active .inner, .flip-card:focus .inner{
+    transform: rotateY(180deg);
+}
+
 /* Experience Page */
 .experience{
     display: grid;
@@ -276,14 +282,6 @@ footer p{
 }
 
 .skills{
-    background-attachment: fixed; /* Parallax effect */     
-    background-position: center;  /* Parallax effect */
-    background-repeat: no-repeat; /* Parallax effect */
-    background-size: cover;      /* Parallax effect */
-    color: white;
-    height: 200px;                /* Parallax effect */
-    background-image: url("../images/code-wallpaper-10.jpg");
-    opacity: 1.5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,8 +291,15 @@ footer p{
 .skills p{
     font-weight: bold;
     font-size: 20px;
-    
-    /* background-color: black; */
+    text-align: center;
+}
+
+.skills p:hover{
+    text-shadow: 2px 2px #CDEBF9;
+    text-shadow: 3px 3px #CDEBF9;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+
 }
 /* About Me Page */
 .gallery{
@@ -318,6 +323,18 @@ footer p{
 }
 
 /* Contact Page */
+#contact_img{
+    max-width: 100%;
+    object-fit: cover;
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 450px;
+    background-image: url("../images/mt_tammany.jpeg");
+}
+
 form{
     display: grid;
     grid-template-columns: auto;
@@ -396,7 +413,10 @@ label{
 }
 
 #connect{
+    padding-top: 40px;
+    padding-bottom: 0;
     font-weight: 600;
+    font-size: 2em;
 }
 /* Different media screens*/
 @media screen and (min-width: 700px){
