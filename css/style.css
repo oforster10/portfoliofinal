@@ -48,7 +48,6 @@ header h1{
 .container{
     text-align: center;
     padding: 50px;
-
 }
 
 .container p{
@@ -58,7 +57,7 @@ header h1{
 }
 
 #headshot{
-    max-width: 90%;
+    max-width: 95%;
 }
 
 footer{
@@ -148,16 +147,20 @@ footer p{
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color:white;}
 
-
 #summary_intro{
     padding-top: 20px;
     font-weight: 500;
     font-size: 1.25em;
 }
 
-.back h{
+#flip-intro, .back h{
     display: none;
 }
+
+#welcome{
+    display: none;
+}
+
 
 
 /* Experience Page */
@@ -463,7 +466,7 @@ label{
     .flipcard{
         background: transparent;
         justify-content: center;
-        width: 65vw;
+        width: 75vw;
         height: 400px;
         perspective: 1000px;
     }
@@ -490,12 +493,13 @@ label{
         color: white;
     }
     
-    .back h{
-        transform: translate(-50%, 100%);
+    .back p{
+        text-align: center;
         position: absolute;
         font-size: 2em;
         color: white;
-        display: inline-block;
+        display: initial;
+        transform: translate(-50%, 20%);
     }
 
     .flipcard:hover .inner, .flipcard:focus-within .inner, .flipcard:active .inner, .flip-card:focus .inner{
@@ -504,7 +508,7 @@ label{
 
     .home{
         display: grid;
-        grid-template-rows: 400px 300px;
+        grid-template-rows: 400px 130px;
         grid-template-columns: 1fr;
     }
 
@@ -514,6 +518,23 @@ label{
         height: 400px;
         justify-content: center;
     }
+
+    #flip-intro{
+        display: initial;
+        color: white;
+        padding-top: 40px;
+        font-weight: 500;
+        font-size: 1.25em;
+    }
+
+    #summary_intro{
+        display: none;
+    }
+
+    #welcome{
+        display: initial;
+    }
+    
 }
 
 @media screen and (prefers-reduced-motion: reduce){
