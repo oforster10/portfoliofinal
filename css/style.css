@@ -463,18 +463,23 @@ label{
         max-height: 500px;
     }
 
+    .container p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .flipcard{
         background: transparent;
         justify-content: center;
         width: 75vw;
-        height: 400px;
+        height: 500px;
         perspective: 1000px;
     }
     
     .inner{
         position: relative;
         width: 100%;
-        height: 50vh;
+        height: 45vh;
         text-align: center;
         transition: transform 1s;
         transform-style: preserve-3d;
@@ -522,8 +527,8 @@ label{
     #flip-intro{
         display: initial;
         color: white;
-        padding-top: 40px;
-        font-weight: 500;
+        padding-top: 30px;
+        font-weight: 300;
         font-size: 1.25em;
     }
 
