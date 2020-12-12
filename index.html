@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type = "image/png" href="images/favicon.png">
         <title>Orli Forster</title>
+        <style type="text/css"></style>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6G9R1Y82Z"></script>
         <script>
@@ -25,51 +26,51 @@
         </header>
         <nav>
             <ul class = "nav_links">
-                <li class="link"><a href="index.html">home</a></li>
+                <li class="link"><a href="index.html" id="current">home</a></li>
                 <li class="link"><a href="experience.html">experience</a></li>
-                <li class="link"><a href="about.html" id="current">about me</a></li>
+                <li class="link"><a href="about.html">about me</a></li>
                 <li class="link"><a href="contact.html">contact</a></li>
             </ul>
             <div class="dropdown">
                 <button class="dropbtn">ORLI FORSTER ▾</button>
                 <div class="dropdown-content">
-                  <a href="index.html">HOME</a>
-                  <a href="experience.html">EXPERIENCES</a>
-                  <a href="about.html">ABOUT ME</a>
-                  <a href="contact.html">CONTACT</a>
+                    <a href="index.html">HOME</a>
+                    <a href="experience.html">EXPERIENCE</a>
+                    <a href="about.html">ABOUT ME</a>
+                    <a href="contact.html">CONTACT</a>
                 </div>
             </div>
             <div class="page_display">
-                <h2>HOME</h2>
+                <h2 id="active">HOME</h2>
                 <h2>EXPERIENCE</h2>
-                <h2 id="active">ABOUT ME</h2>
+                <h2>ABOUT ME</h2>
                 <h2>CONTACT</h2>
             </div>
         </nav>
         <main class="container" id="main">
-            <p>When I'm not in the classroom, you can mostly find me exploring nature, exercising, eating my morning oatmeal, helping those in need, or spending time with people I love.</p><br>
-            <div class="gallery">
-                <img src="images/lakejoshua.jpg" alt="Lake Joshua at Sleepaway camp URJ Camp Harlam"/>
-          
-                <img src="images/bighouse.jpg" alt="Michigan Stadium"/>
-          
-                <img src="images/northcampus.jpeg" alt="University of Michigan North Campus during the pretty autumn"/>
-          
-                <img src="images/oatmealxoxo.jpeg" alt="Bowl of oatmeal"/>
-
-                <img src="images/chapelonthehill.jpeg" alt="URJ Camp Harlam"/>
-
-                <img src="images/aa_farmers_market.jpg" alt="Ann Arbor Farmers Market"/>
-            
-                <img src="images/siblings_at_bm.jpg" alt="Orli and her siblings"/>
-          
-                <img src="images/polaroid.jpg" alt="Polaroid of Orli"/>
-
-                <img src="images/arb.jpeg" alt="Nicholas Arboretum"/>
-
-                <img src="images/danielle_reservation.jpeg" alt="Orli and friend jumping mid air"/>
+            <div class="home">
+            <div class="flipcard">
+                <div class="inner">
+                    <a class="fliptab" href="#skip" aria-label="flipcard"></a>
+                    <div class="front">
+                        <img src="images/orli_headshot.jpg" alt="Orli solo picture" id="headshot">
+                    </div>
+                    <div class="back">
+                        <p id = "welcome">WELCOME!</p>
+                        <br><p id = "flip-intro">My name is Orli Forster and I am passionate about how data analysis can be used to make informed decisions, bring people together, and advance society. </p><br>
+                    </div>
+                </div>
             </div>
-        </main>
+            <div class="summary">
+            <p id = "summary_intro">My name is Orli Forster and I am passionate about how data analysis can be used to make informed decisions, bring people together, and advance society. </p><br>
+            <p class="extra">I am a current junior at the University of Michigan pursuing a Bachelor of Science in Data Science from the School of Information
+                and a Bachelor of Arts in Spanish from the College of Literature, Science, and the Arts.
+                I also serve as the Junior Student Liaison for the School of Information Bachelor's Association.</p><br>
+            <p class="extra">On campus, I spend my time fulfilling my passion for community service and philanthropy.
+                In my free time, I enjoy exercising, exploring nature, eating, watching TV, and spending time with friends and family.</p>
+            </div>
+        </div>
+            </main>
         <footer>
             <h1>ORLI FORSTER</h1>
             <div class="footer_links">
